@@ -1,0 +1,109 @@
+.page {
+  // .page__visit
+  &__visit {
+    background: url("../img/visit/bgr_img.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.carousel {
+  // .carousel__img
+  &__img {
+    background: #fff;
+    border-radius: 13px;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0.4;
+    text-align: center;
+    transform: scale(0.9, 0.9);
+    transition: all ease 0.8s;
+    // transition: all 0.4s ease-in-out;
+    & .slick-center {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  // .carousel__text
+  &__text {
+    text-align: center;
+    padding: 15px 0;
+  }
+  // .carousel__button
+  &__button {
+    text-align: center;
+    margin: 40px 0 50px 0;
+  }
+  &__btn {
+    padding: 10px 60px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #7c7a28;
+    background: #eafb81;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    &:hover {
+      background: #b3c544;
+      color: #fff;
+    }
+    @media (min-width: 1440px) {
+      padding: 10px 110px;
+      font-size: 20px;
+    }
+  }
+}
+
+// carousel ============================
+// .slick {
+//   &-list {
+//     overflow: hidden;
+//   }
+//   &-track {
+//     display: flex;
+//   }
+// }
+
+// .carousel {
+//   &__image {
+//     .slick-dots {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       li {
+//         list-style: none;
+//         margin: 0 10px;
+//         &.slick-active button {
+//           background-color: #7c7a28;
+//         }
+//       }
+//       button {
+//         font-size: 0;
+//         width: 12px;
+//         height: 12px;
+//         border: 1px solid #7c7a28;
+//         background-color: transparent;
+//         border-radius: 50%;
+//         margin-top: 20px;
+//       }
+//     }
+//   }
+//   &__img {
+//     opacity: 1;
+//     text-align: center;
+//     transform: scale(0.8, 0.8);
+//     transition: all 0.4s ease-in-out;
+
+//     &.slick-center {
+//       transform: scale(1);
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// ===============================================

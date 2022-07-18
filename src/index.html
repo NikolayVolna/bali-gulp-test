@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bali</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__body lock-padding">
+            <div class="header__logo">
+              <a href="#">Explore Bali</a>
+            </div>
+            <div class="header__menu">
+              <nav class="nav__menu menu">
+                <ul class="menu__item">
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">Home</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">Explore</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">Plan your trip</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">Updates</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">Contact us</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__button button">
+                <a href="#" class="button__btn">Signup</a>
+              </div>
+              <div class="header__icons-bar icon">
+                <div class="icon-bar">
+                  <a class="icon__viber" href="#">
+                    <img src="@img/main/social_icons/viber.svg" alt="viber" />
+                  </a>
+                </div>
+                <div class="icon-bar">
+                  <a class="icon__instagram" href="#">
+                    <img
+                      src="@img/main/social_icons/instagram.svg"
+                      alt="instagram"
+                    />
+                  </a>
+                </div>
+                <div class="icon-bar">
+                  <a class="icon__facebook" href="#">
+                    <img
+                      src="@img/main/social_icons/facebook.svg"
+                      alt="facebook"
+                    />
+                  </a>
+                </div>
+                <div class="icon-bar">
+                  <a class="icon__twitter" href="#">
+                    <img
+                      src="@img/main/social_icons/twitter.svg"
+                      alt="twitter"
+                    />
+                  </a>
+                </div>
+                <div class="icon-bar">
+                  <a class="icon__youtube" href="#">
+                    <img
+                      src="@img/main/social_icons/youtube.svg"
+                      alt="youtube"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="menu__burger">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__main main">
+          <div class="main__container container">
+            <div class="main__body">
+              <h1 class="main__title">Experience the Richness in Bali</h1>
+              <p class="main__subtitle">
+                From the incredible variety of beauty and culture since ancient
+                times, experience the divine beauty.
+              </p>
+              <form action="#" class="main__form form">
+                <div class="form__destination destination">
+                  <label class="destination__label" for="">From</label>
+                  <select class="destination__select" name="destination">
+                    <option selected="true" disabled="disabled">
+                      Destination
+                    </option>
+                    <option value="">USA</option>
+                    <option value="">France</option>
+                    <option value="">Ukraine</option>
+                    <option value="">Poland</option>
+                    <option value="">Germany</option>
+                  </select>
+                </div>
+                <div class="form__dates dates">
+                  <label class="dates__label" for="">To</label>
+                  <div class="dates__content">
+                    <input
+                      class="dates__input"
+                      placeholder="week/month"
+                      type="text"
+                      name="Data"
+                    />
+                    <div class="dates__icon">
+                      <a href=""
+                        ><img src="@img/main/icons/calendar.svg" alt="calendar"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__duration duration">
+                  <label class="duration__label" for="">Duration</label>
+                  <div class="duration__content">
+                    <input
+                      class="duration__input"
+                      placeholder="days/week"
+                      type="text"
+                      name="start"
+                    />
+                    <div class="duration__icon">
+                      <a href=""
+                        ><img src="@img/main/icons/time.svg" alt="time"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__persons persons">
+                  <label class="persons__label" for="">Persons</label>
+                  <select class="persons__select" name="persons">
+                    <option selected="true" disabled="disabled">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                  </select>
+                </div>
+                <div class="form__batton">
+                  <a class="form__btn" href="">Search</a>
+                </div>
+              </form>
+              <div class="main__message message">
+                <div class="message__circle">
+                  <div class="message__icon">
+                    <a class="message__link popup-link" href="#popup">
+                      <img src="@img/main/icons/message.svg" alt="message" />
+                    </a>
+                  </div>
+                </div>
+                <p class="message__text">How do I</p>
+              </div>
+              <div id="popup" class="massage__popup popup">
+                <!-- <a href="#header" class="popup__area"></a> -->
+                <div class="popup__body">
+                  <div class="popup__content">
+                    <a class="popup__close close-popup" href="##">+</a>
+                    <div class="popup__title">Write to us</div>
+                    <form class="popup__form" action="#">
+                      <textarea name=""></textarea>
+                      <div class="popup__button">
+                        <a class="popup-link" href="#popup_2">Send</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div id="popup_2" class="massage__popup popup">
+                <div class="popup__body">
+                  <div class="popup__content">
+                    <div class="popup__title">Thanks for the feedback</div>
+                    <div class="popup__button close-popup">
+                      <a href="##">Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__cover-img ibg">
+              <img src="@img/main/cover.png" alt="cover" />
+            </div>
+          </div>
+        </section>
+        <section class="page__offer offer">
+          <div class="offer__container container">
+            <h2 class="offer__title _title">Exclusive offers!!</h2>
+            <div class="offer__content content">
+              <div class="content__image image-content">
+                <div class="image-content__img">
+                  <img src="@img/offers/bali_one.png" alt="bali" />
+                  <div class="image-content__title">20% off</div>
+                  <div class="image-content__logo">Explore Bali</div>
+                </div>
+                <div class="image-content__info info">
+                  <div class="info__link">
+                    <button
+                      class="info__link__btn btn-link"
+                      data-path="one"
+                      href=""
+                    >
+                      Learn more
+                    </button>
+                    <div
+                      data-target="one"
+                      class="info__link__text dropdown-item"
+                    >
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eligendi, laborum dolorem doloribus earum dignissimos non
+                      deleniti nisi similique laboriosam? Quaerat dolorum
+                      deleniti assumenda culpa provident a laborum ad molestias
+                      ex.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__image image-content">
+                <div class="image-content__img">
+                  <img src="@img/offers/bali_two.png" alt="bali" />
+
+                  <div class="image-content__title">25% off</div>
+                  <div class="image-content__logo">Explore Bali</div>
+                </div>
+                <div class="image-content__info info">
+                  <div class="info__link">
+                    <button
+                      class="info__link__btn btn-link"
+                      data-path="two"
+                      href=""
+                    >
+                      Learn more
+                    </button>
+                    <div
+                      data-target="two"
+                      class="info__link__text dropdown-item"
+                    >
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eligendi, laborum dolorem doloribus earum dignissimos non
+                      deleniti nisi similique laboriosam? Quaerat dolorum
+                      deleniti assumenda culpa provident a laborum ad molestias
+                      ex.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__image image-content">
+                <div class="image-content__img">
+                  <img src="@img/offers/bali_three.png" alt="bali" />
+
+                  <div class="image-content__title">22% off</div>
+                  <div class="image-content__logo">Explore Bali</div>
+                </div>
+                <div class="image-content__info info">
+                  <div class="info__link">
+                    <button
+                      class="info__link__btn btn-link"
+                      data-path="three"
+                      href=""
+                    >
+                      Learn more
+                    </button>
+                    <div
+                      data-target="three"
+                      class="info__link__text dropdown-item"
+                    >
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eligendi, laborum dolorem doloribus earum dignissimos non
+                      deleniti nisi similique laboriosam? Quaerat dolorum
+                      deleniti assumenda culpa provident a laborum ad molestias
+                      ex.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__visit visit">
+          <div class="visit__container container">
+            <h2 class="visit__title _title">Our most visited places</h2>
+            <div class="visit__wrapper wrapper">
+              <div class="wrapper__carousel carousel">
+                <div class="carousel__image">
+                  <div class="carousel__img">
+                    <img src="@img/visit/slider/Mount_Batur.png" alt="" />
+                    <p class="carousel__text">Mount Batur</p>
+                  </div>
+                  <div class="carousel__img">
+                    <img src="@img/visit/slider/Pura_Tanah.png" alt="" />
+                    <p class="carousel__text">Pura Tanah Lot</p>
+                  </div>
+                  <div class="carousel__img">
+                    <img src="@img/visit/slider/Uluwatu_Temple.png" alt="" />
+                    <p class="carousel__text">Uluwatu Temple</p>
+                  </div>
+                  <div class="carousel__img">
+                    <img src="@img/visit/slider/Pura_Tanah.png" alt="" />
+                    <p class="carousel__text">Pura Tanah Lot</p>
+                  </div>
+                  <div class="carousel__img">
+                    <img src="@img/visit/slider/Mount_Batur.png" alt="" />
+                    <p class="carousel__text">Mount Batur</p>
+                  </div>
+                  <div class="carousel__img">
+                    <img src="@img/visit/slider/Pura_Tanah.png" alt="" />
+                    <p class="carousel__text">Pura Tanah Lot</p>
+                  </div>
+                </div>
+                <div class="carousel__button">
+                  <a class="carousel__btn" href="">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__partners partners">
+          <div class="partners__container container">
+            <h2 class="partners__title _title">Our Trusted partners</h2>
+            <div class="partners__wrapper">
+              <a href="">
+                <img src="@img/partners/golden_rama.png" alt="golden_rama" />
+              </a>
+              <a href="">
+                <img src="@img/partners/panorama.png" alt="panorama" />
+              </a>
+              <a href="">
+                <img src="@img/partners/manta_dive.png" alt="manta_dive" />
+              </a>
+              <a href="">
+                <img src="@img/partners/flores.png" alt="flores" />
+              </a>
+              <a href="">
+                <img src="@img/partners/these7en.png" alt="these7en" />
+              </a>
+              <a href="">
+                <img src="@img/partners/gogonesia.png" alt="gogonesia" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page__services services">
+          <div class="services__container container">
+            <h2 class="services__title _title">Our Services</h2>
+            <div class="services__columns column">
+              <div class="column__item">
+                <div class="column__icon icon-column">
+                  <div class="icon-column__circle">
+                    <div class="icon-column__img">
+                      <img src="@img/services/icons/travel.svg" alt="travel" />
+                    </div>
+                  </div>
+                </div>
+                <div class="column__title">Travel Insurance</div>
+                <div class="column__text">
+                  When we travel, most of us do so on a budget. This is where a
+                  travel insurance comes in use, is helpful for us and helps...
+                </div>
+              </div>
+              <div class="column__item">
+                <div class="column__icon icon-column">
+                  <div class="icon-column__circle">
+                    <div class="icon-column__img">
+                      <img
+                        src="@img/services/icons/medical.svg"
+                        alt="medical"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="column__title">Medical care</div>
+                <div class="column__text">
+                  Rated as one of the top ten journals in healthcare
+                  administration, Medical Care is devoted to all aspects of..
+                </div>
+              </div>
+              <div class="column__item">
+                <div class="column__icon icon-column">
+                  <div class="icon-column__circle">
+                    <div class="icon-column__img">
+                      <img
+                        src="@img/services/icons/customer.svg"
+                        alt="customer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="column__title">Customer care</div>
+                <div class="column__text">
+                  When we travel, most of us do so on a budget. This is where a
+                  travel insurance comes in use, is helpful for us and helps...
+                </div>
+              </div>
+              <div class="column__item">
+                <div class="column__icon icon-column">
+                  <div class="icon-column__circle">
+                    <div class="icon-column__img">
+                      <img
+                        src="@img/services/icons/logistics.svg"
+                        alt="logistics"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="column__title">Logistics</div>
+                <div class="column__text">
+                  When we travel, most of us do so on a budget. This is where a
+                  travel insurance comes in use, is helpful for us and helps...
+                </div>
+              </div>
+              <div class="column__item">
+                <div class="column__icon icon-column">
+                  <div class="icon-column__circle">
+                    <div class="icon-column__img">
+                      <img
+                        src="@img/services/icons/documentation.svg"
+                        alt="documentation"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="column__title">Travel documentation</div>
+                <div class="column__text">
+                  When we travel, most of us do so on a budget. This is where a
+                  travel insurance comes in use, is helpful for us and helps...
+                </div>
+              </div>
+              <div class="column__item">
+                <div class="column__icon icon-column">
+                  <div class="icon-column__circle">
+                    <div class="icon-column__img">
+                      <img src="@img/services/icons/meal.svg" alt="meal" />
+                    </div>
+                  </div>
+                </div>
+                <div class="column__title">Meal discounts</div>
+                <div class="column__text">
+                  When we travel, most of us do so on a budget. This is where a
+                  travel insurance comes in use, is helpful for us and helps...
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__customers customers">
+          <div class="customers__container container">
+            <h2 class="customers__title _title">Loved by customers</h2>
+            <div class="customers__slider slider">
+              <div class="slider__card active card">
+                <div class="card__item">
+                  <div class="card__item__avatar">
+                    <img src="@img/customers/avatar_1.png" alt="avatar" />
+                  </div>
+                  <div class="card__item__reviews reviews">
+                    <div class="reviews__title">-Amit Bharadwaj</div>
+                    <div class="reviews__stars">
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                    </div>
+                    <div class="reviews__discription">
+                      Loved the experience in Bali, specially in the Islands of
+                      bali which are truly escotic and enriching. From spiritual
+                      practices to incredible hospitality, loved each bit of it.
+                      Special thanks to Explore Bali for setting up the amazing
+                      experiences from people worldwide so far. I will surely
+                      recommend this to my friends and family, live, love,
+                      explore and travel!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__card card">
+                <div class="card__item">
+                  <div class="card__item__avatar">
+                    <img src="@img/customers/avatar_2.jpg" alt="avatar" />
+                  </div>
+                  <div class="card__item__reviews reviews">
+                    <div class="reviews__title">-Urassaya Sperbund</div>
+                    <div class="reviews__stars">
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                    </div>
+                    <div class="reviews__discription">
+                      Bali is one of the seventeen and a half thousand islands
+                      of Indonesia. And the island is divine! Not offended by
+                      the creator, who tried and endowed this place with a
+                      variety of nature, and caressed by the climate, and did
+                      not forget about the people - kind, light and hospitable.
+                      That is why this island attracts millions of tourists!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__card card">
+                <div class="card__item">
+                  <div class="card__item__avatar">
+                    <img src="@img/customers/avatar_3.jfif" alt="avatar" />
+                  </div>
+                  <div class="card__item__reviews reviews">
+                    <div class="reviews__title">-Nadech Kugimiya</div>
+                    <div class="reviews__stars">
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                      <img src="@img/customers/icon/star.svg" alt="star" />
+                    </div>
+                    <div class="reviews__discription">
+                      The island of Bali is an amazing place on earth, where the
+                      Buddhist worldview is manifested, probably, in all spheres
+                      of life. The benevolence of people, the absence of a
+                      noticeable stratification of society, the modesty of
+                      dwellings, unpretentiousness in everyday life, respect for
+                      each other.Thank you very much!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__buttons">
+                <div id="btn-prev" class="slider__btn-left">
+                  <img src="@img/customers/icon/arrow_left.svg" alt="arrow" />
+                </div>
+                <div id="btn-next" class="slider__btn-right">
+                  <img src="@img/customers/icon/arrow_right.svg" alt="arrow" />
+                </div>
+              </div>
+              <div class="slider__dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__impression impression">
+          <div class="impression__container container">
+            <div class="impression__body">
+              <div class="impression__title">Create experiences together</div>
+              <div class="impression__cover-img ibg">
+                <img src="@img/impression/cover.png" alt="cover" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__row">
+            <div class="footer__logo">
+              <a href="">Explore Bali</a>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Menu</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Home</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Explore</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">About us</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Plan your trip</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Destinations</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Mount Ubud</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Pura tanah lot</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Uluwatu Temple</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Mount Batur</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Trip Type</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Solo trip</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Honeymoon</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Family tour</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a class="menu-footer__link" href="">Calm and Nature</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Contact us</div>
+              <div class="footer__contact contact-footer">
+                <a
+                  class="contact-footer__link"
+                  href="Email: Explorebali@contact.com"
+                  >Email:Explorebali@contact.com</a
+                >
+                <a class="contact-footer__link" href="tel:+6236739299"
+                  >Tel: +62-36 739 299</a
+                >
+              </div>
+              <div class="footer__social social">
+                <a class="social__item" href="">
+                  <img src="@img/footer/icons/facebook.png" alt="facebook" />
+                </a>
+                <a class="social__item" href="">
+                  <img src="@img/footer/icons/instagram.png" alt="instagram" />
+                </a>
+                <a class="social__item" href="">
+                  <img src="@img/footer/icons/viber.png" alt="viber" />
+                </a>
+                <a class="social__item" href="">
+                  <img src="@img/footer/icons/twitter.png" alt="twitter" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__footer">@2022.explorebali.Allrightsreserved</div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script type="module" src="js/app.min.js "></script>
+  </body>
+</html>
