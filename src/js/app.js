@@ -1,39 +1,9 @@
+import * as flsFunctions from "./modules/testWebp.js";
+
+flsFunctions.isWebp();
+
 import $ from "jquery";
 import "slick-carousel";
-
-$(".carousel__image").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  centerMode: true,
-  arrows: false,
-  dots: true,
-  speed: 300,
-  centerPadding: "0px",
-  infinite: true,
-  autoplaySpeed: 5000,
-  autoplay: true,
-  mobileFirst: true,
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 1340,
-      settings: {
-        slidesToShow: 5,
-      },
-    },
-  ],
-});
 
 // BURGER-MENU =======================================================================
 const burgerMenu = document.querySelector(".menu__burger");
@@ -46,6 +16,7 @@ if (burgerMenu) {
     navMenu.classList.toggle("_active");
   });
 }
+
 // ===================================================================================
 
 // POPUP =============================================================================
@@ -204,41 +175,35 @@ document.querySelectorAll(".btn-link").forEach((e) => {
 // ===================================================================================
 
 // SLIDER-SLICK ===========================================================================
-// $(document).ready(function () {
-//   $(".carousel__image").slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     centerMode: true,
-//     arrows: false,
-//     dots: true,
-//     speed: 300,
-//     centerPadding: "0px",
-//     infinite: true,
-//     autoplaySpeed: 5000,
-//     autoplay: true,
-//     mobileFirst: true,
-//     responsive: [
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 3,
-//         },
-//       },
-//       {
-//         breakpoint: 1000,
-//         settings: {
-//           slidesToShow: 3,
-//         },
-//       },
-//       {
-//         breakpoint: 1340,
-//         settings: {
-//           slidesToShow: 5,
-//         },
-//       },
-//     ],
-//   });
-// });
+$(document).ready(function () {
+  $(".carousel__image").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: false,
+    dots: true,
+    speed: 300,
+    centerPadding: "0px",
+    infinite: true,
+    autoplaySpeed: 5000,
+    autoplay: true,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1340,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+    ],
+  });
+});
 
 // =======================================================================
 

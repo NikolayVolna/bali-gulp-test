@@ -1,163 +1,166 @@
 .customers {
-    // .customers__container
-    &__container {
-        background: #eafb81;
-    }
+  // .customers__container
+  &__container {
+    background: #eafb81;
+  }
 }
 
 .slider {
-    padding-bottom: 50px;
-    position: relative;
+  padding-bottom: 50px;
+  position: relative;
+  @media (min-width: 700px) {
+    margin: 0 30px;
+  }
+  @media (min-width: 1024px) {
+    margin: 0 150px;
+  }
+  @media (min-width: 1440px) {
+    margin: 0 248px;
+  }
+  // .slider__card
+  &__card {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  // .slider__buttons
+  &__buttons {
+    display: none;
     @media (min-width: 700px) {
-        margin: 0 30px;
+      display: block;
     }
-    @media (min-width: 1024px) {
-        margin: 0 150px;
+  }
+  // .slider__btn-left
+  &__btn-left img {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(48%) sepia(7%) saturate(2966%)
+        hue-rotate(20deg) brightness(93%) contrast(98%);
     }
-    @media (min-width: 1440px) {
-        margin: 0 248px;
+  }
+  // .slider__btn-right
+  &__btn-right img {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(48%) sepia(7%) saturate(2966%)
+        hue-rotate(20deg) brightness(93%) contrast(98%);
     }
-    // .slider__card
-    &__card {
-        display: none;
-        &.active {
-            display: block;
-        }
+  }
+  // .slider__dots
+  &__dots {
+    padding: 20px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    @media (min-width: 700px) {
+      display: none;
     }
-    // .slider__buttons
-    &__buttons {
-        display: none;
-        @media (min-width: 700px) {
-            display: block;
-        }
+    .active {
+      background-color: #7c7a28;
     }
-    // .slider__btn-left
-    &__btn-left img {
-        position: absolute;
-        top: 40%;
-        left: 10px;
-        &:hover {
-            filter: brightness(0) saturate(100%) invert(48%) sepia(7%) saturate(2966%) hue-rotate(20deg) brightness(93%) contrast(98%);
-        }
+    span {
+      width: 12px;
+      height: 12px;
+      border: 1px solid #7c7a28;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: 50%;
+      margin: 0 10px;
     }
-    // .slider__btn-right
-    &__btn-right img {
-        position: absolute;
-        top: 40%;
-        right: 10px;
-        &:hover {
-            filter: brightness(0) saturate(100%) invert(48%) sepia(7%) saturate(2966%) hue-rotate(20deg) brightness(93%) contrast(98%);
-        }
-    }
-    // .slider__dots
-    &__dots {
-        padding: 20px 0 50px 0;
-        display: flex;
-        justify-content: center;
-        @media (min-width: 700px) {
-            display: none;
-        }
-        .active {
-            background-color: #7c7a28;
-        }
-        span {
-            width: 12px;
-            height: 12px;
-            border: 1px solid #7c7a28;
-            background-color: transparent;
-            cursor: pointer;
-            border-radius: 50%;
-            margin: 0 10px;
-        }
-    }
+  }
 }
 
 .card__item {
-    text-align: center;
-    height: 250px;
-    width: 100%;
-    background: #ffffff;
-    box-shadow: 0px 0px 8px 3px rgba(124, 122, 40, 0.21);
-    border-radius: 5px;
-    padding: 0 10px;
-    animation: open 1s;
-    @media (min-width: 375px) {
-        height: 235px;
-    }
-    @media (min-width: 425px) {
-        height: 220px;
-    }
-    @media (min-width: 700px) {
-        display: flex;
-        height: 283px;
-        padding: 30px 40px 30px 40px;
-    }
-    // .card__avatar
-    &__avatar {
-        padding: 5px 0;
-    }
+  text-align: center;
+  height: 250px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px 3px rgba(124, 122, 40, 0.21);
+  border-radius: 5px;
+  padding: 0 10px;
+  animation: open 1s;
+  @media (min-width: 375px) {
+    height: 235px;
+  }
+  @media (min-width: 425px) {
+    height: 220px;
+  }
+  @media (min-width: 700px) {
+    display: flex;
+    height: 283px;
+    padding: 30px 40px 30px 40px;
+  }
+  // .card__avatar
+  &__avatar {
+    padding: 5px 0;
     img {
-        width: 60px;
-        border-radius: 50%;
-        @media (min-width: 700px) {
-            width: 180px;
-            border-radius: 15px;
-        }
+      width: 60px;
+      border-radius: 50%;
+      @media (min-width: 700px) {
+        width: 180px;
+        border-radius: 15px;
+      }
     }
-    // .card__reviews
-    &__reviews {
-        color: #7c7a28;
-    }
+  }
+
+  // .card__reviews
+  &__reviews {
+    color: #7c7a28;
+  }
 }
 
 .reviews {
+  @media (min-width: 700px) {
+    padding: 0px 0px 0px 20px;
+    text-align: start;
+  }
+  // .reviews__title
+  &__title {
+    font-size: 16px;
+    padding-bottom: 5px;
     @media (min-width: 700px) {
-        padding: 0px 0px 0px 20px;
-        text-align: start;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
     }
-    // .reviews__title
-    &__title {
-        font-size: 16px;
-        padding-bottom: 5px;
-        @media (min-width: 700px) {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 28px;
-        }
-        @media (min-width: 1024px) {
-            font-size: 21px;
-            line-height: 38px;
-        }
-        @media (min-width: 1440px) {
-            font-size: 25px;
-        }
+    @media (min-width: 1024px) {
+      font-size: 21px;
+      line-height: 38px;
     }
-    // .reviews__stars
-    &__stars img {
-        width: 15px;
+    @media (min-width: 1440px) {
+      font-size: 25px;
     }
-    // .reviews__discription
-    &__discription {
-        font-size: 13px;
-        padding: 5px 0 10px 0;
-        @media (min-width: 700px) {
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 22px;
-            letter-spacing: 0.01em;
-        }
+  }
+  // .reviews__stars
+  &__stars img {
+    width: 15px;
+  }
+  // .reviews__discription
+  &__discription {
+    font-size: 13px;
+    padding: 5px 0 10px 0;
+    @media (min-width: 700px) {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.01em;
     }
+  }
 }
 
 @keyframes open {
-    0% {
-        display: block;
-        opacity: 0;
-        visibility: hidden;
-    }
-    100% {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-    }
+  0% {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
 }

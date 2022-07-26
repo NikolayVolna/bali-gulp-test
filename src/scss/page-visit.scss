@@ -1,7 +1,7 @@
 .page {
   // .page__visit
   &__visit {
-    background: url("../img/visit/bgr_img.png");
+    background-image: url("../img/visit/bgr_img.png");
     background-size: cover;
     background-position: center;
   }
@@ -14,24 +14,27 @@
     border-radius: 13px;
     cursor: pointer;
     overflow: hidden;
-    opacity: 0.4;
+    // opacity: 0.4;
     text-align: center;
     transform: scale(0.9, 0.9);
     transition: all ease 0.8s;
-    // transition: all 0.4s ease-in-out;
-    & .slick-center {
-      transform: scale(1);
-      opacity: 1;
-    }
-
     img {
       width: 100%;
     }
+    &:hover {
+      transform: scale(1);
+    }
+    // &.slick-center {
+    //   transform: scale(1);
+    //   opacity: 1;
+    // }
   }
+
   // .carousel__text
   &__text {
     text-align: center;
     padding: 15px 0;
+    color: #7c7a28;
   }
   // .carousel__button
   &__button {
