@@ -1,3 +1,5 @@
+var ghPages = require("gulp-gh-pages");
+
 // Основной модуль
 import gulp from "gulp";
 // Импорт путей
@@ -60,3 +62,7 @@ export { deployZIP };
 export { deployFTP };
 // Выполнение сценария по умолчанию
 gulp.task("default", dev);
+
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+});
