@@ -1,4 +1,12 @@
-var ghPages = require("gulp-gh-pages");
+var deploy = require("gulp-gh-pages");
+
+var options = {
+  remoteUrl: "https://nikolayvolna.github.io/bali-gulp-test/",
+  branch: "master",
+};
+gulp.task("deploy", function () {
+  gulp.src("dist/**/*.*").pipe(deploy(options));
+});
 
 // Основной модуль
 import gulp from "gulp";
@@ -62,7 +70,3 @@ export { deployZIP };
 export { deployFTP };
 // Выполнение сценария по умолчанию
 gulp.task("default", dev);
-
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(ghPages());
-});
