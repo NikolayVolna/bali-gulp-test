@@ -1,7 +1,7 @@
 var deploy = require("gulp-gh-pages");
 
 var options = {
-  remoteUrl: "https://nikolayvolna.github.io/bali-gulp-test/",
+  remoteUrl: "https://nikolayvolna.github.io/bali-gulp-test",
   branch: "master",
 };
 gulp.task("deploy", function () {
